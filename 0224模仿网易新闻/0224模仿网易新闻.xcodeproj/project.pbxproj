@@ -18,6 +18,8 @@
 		6D20BE531C7DC6EC00DB08A6 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D20BE521C7DC6EC00DB08A6 /* News.storyboard */; };
 		6D4B9C6B1C7E03A6007B0D6F /* NetworkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B9C6A1C7E03A6007B0D6F /* NetworkTools.m */; };
 		6D4B9C6E1C7E093D007B0D6F /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B9C6D1C7E093D007B0D6F /* News.m */; };
+		6D4B9C721C7E1156007B0D6F /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B9C711C7E1156007B0D6F /* NSArray+Log.m */; };
+		6D4B9C751C7E29ED007B0D6F /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B9C741C7E29ED007B0D6F /* NewsCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,10 @@
 		6D4B9C6A1C7E03A6007B0D6F /* NetworkTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTools.m; sourceTree = "<group>"; };
 		6D4B9C6C1C7E093D007B0D6F /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
 		6D4B9C6D1C7E093D007B0D6F /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
+		6D4B9C701C7E1156007B0D6F /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		6D4B9C711C7E1156007B0D6F /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		6D4B9C731C7E29ED007B0D6F /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		6D4B9C741C7E29ED007B0D6F /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
 		95A28D8D3EA3BE34B396F9BE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EA0EEC036E64E991F13E481C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20A8439F04D142360EBE958 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +183,8 @@
 				6D20BE501C7DC6DF00DB08A6 /* NewsTableViewController.m */,
 				6D4B9C6C1C7E093D007B0D6F /* News.h */,
 				6D4B9C6D1C7E093D007B0D6F /* News.m */,
+				6D4B9C731C7E29ED007B0D6F /* NewsCell.h */,
+				6D4B9C741C7E29ED007B0D6F /* NewsCell.m */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -184,10 +192,20 @@
 		6D20BE4E1C7DC67D00DB08A6 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				6D4B9C6F1C7E1156007B0D6F /* Log */,
 				6D4B9C691C7E03A6007B0D6F /* NetworkTools.h */,
 				6D4B9C6A1C7E03A6007B0D6F /* NetworkTools.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		6D4B9C6F1C7E1156007B0D6F /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				6D4B9C701C7E1156007B0D6F /* NSArray+Log.h */,
+				6D4B9C711C7E1156007B0D6F /* NSArray+Log.m */,
+			);
+			path = Log;
 			sourceTree = "<group>";
 		};
 		CED0DD231294245143150332 /* Frameworks */ = {
@@ -385,6 +403,8 @@
 				6D4B9C6E1C7E093D007B0D6F /* News.m in Sources */,
 				6D4B9C6B1C7E03A6007B0D6F /* NetworkTools.m in Sources */,
 				6D20BE511C7DC6DF00DB08A6 /* NewsTableViewController.m in Sources */,
+				6D4B9C751C7E29ED007B0D6F /* NewsCell.m in Sources */,
+				6D4B9C721C7E1156007B0D6F /* NSArray+Log.m in Sources */,
 				6D20BE1C1C7DC3D100DB08A6 /* AppDelegate.m in Sources */,
 				6D20BE191C7DC3D100DB08A6 /* main.m in Sources */,
 			);
