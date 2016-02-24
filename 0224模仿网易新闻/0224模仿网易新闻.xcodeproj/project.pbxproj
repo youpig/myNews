@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		6D20BE191C7DC3D100DB08A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D20BE181C7DC3D100DB08A6 /* main.m */; };
 		6D20BE1C1C7DC3D100DB08A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D20BE1B1C7DC3D100DB08A6 /* AppDelegate.m */; };
-		6D20BE1F1C7DC3D100DB08A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D20BE1E1C7DC3D100DB08A6 /* ViewController.m */; };
-		6D20BE221C7DC3D100DB08A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D20BE201C7DC3D100DB08A6 /* Main.storyboard */; };
 		6D20BE241C7DC3D100DB08A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D20BE231C7DC3D100DB08A6 /* Assets.xcassets */; };
 		6D20BE271C7DC3D100DB08A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D20BE251C7DC3D100DB08A6 /* LaunchScreen.storyboard */; };
 		6D20BE321C7DC3D100DB08A6 /* _224______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D20BE311C7DC3D100DB08A6 /* _224______Tests.m */; };
 		6D20BE3D1C7DC3D100DB08A6 /* _224______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D20BE3C1C7DC3D100DB08A6 /* _224______UITests.m */; };
+		6D20BE511C7DC6DF00DB08A6 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D20BE501C7DC6DF00DB08A6 /* NewsTableViewController.m */; };
+		6D20BE531C7DC6EC00DB08A6 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D20BE521C7DC6EC00DB08A6 /* News.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +39,6 @@
 		6D20BE181C7DC3D100DB08A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6D20BE1A1C7DC3D100DB08A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6D20BE1B1C7DC3D100DB08A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6D20BE1D1C7DC3D100DB08A6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6D20BE1E1C7DC3D100DB08A6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6D20BE211C7DC3D100DB08A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D20BE231C7DC3D100DB08A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D20BE261C7DC3D100DB08A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D20BE281C7DC3D100DB08A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +48,9 @@
 		6D20BE381C7DC3D100DB08A6 /* 0224模仿网易新闻UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "0224模仿网易新闻UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D20BE3C1C7DC3D100DB08A6 /* _224______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_224______UITests.m"; sourceTree = "<group>"; };
 		6D20BE3E1C7DC3D100DB08A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D20BE4F1C7DC6DF00DB08A6 /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
+		6D20BE501C7DC6DF00DB08A6 /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
+		6D20BE521C7DC6EC00DB08A6 /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +101,9 @@
 		6D20BE161C7DC3D100DB08A6 /* 0224模仿网易新闻 */ = {
 			isa = PBXGroup;
 			children = (
+				6D20BE4C1C7DC67D00DB08A6 /* Classes */,
 				6D20BE1A1C7DC3D100DB08A6 /* AppDelegate.h */,
 				6D20BE1B1C7DC3D100DB08A6 /* AppDelegate.m */,
-				6D20BE1D1C7DC3D100DB08A6 /* ViewController.h */,
-				6D20BE1E1C7DC3D100DB08A6 /* ViewController.m */,
-				6D20BE201C7DC3D100DB08A6 /* Main.storyboard */,
 				6D20BE231C7DC3D100DB08A6 /* Assets.xcassets */,
 				6D20BE251C7DC3D100DB08A6 /* LaunchScreen.storyboard */,
 				6D20BE281C7DC3D100DB08A6 /* Info.plist */,
@@ -138,6 +136,32 @@
 				6D20BE3E1C7DC3D100DB08A6 /* Info.plist */,
 			);
 			path = "0224模仿网易新闻UITests";
+			sourceTree = "<group>";
+		};
+		6D20BE4C1C7DC67D00DB08A6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6D20BE4D1C7DC67D00DB08A6 /* News */,
+				6D20BE4E1C7DC67D00DB08A6 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6D20BE4D1C7DC67D00DB08A6 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				6D20BE521C7DC6EC00DB08A6 /* News.storyboard */,
+				6D20BE4F1C7DC6DF00DB08A6 /* NewsTableViewController.h */,
+				6D20BE501C7DC6DF00DB08A6 /* NewsTableViewController.m */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		6D20BE4E1C7DC67D00DB08A6 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,8 +271,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D20BE271C7DC3D100DB08A6 /* LaunchScreen.storyboard in Resources */,
+				6D20BE531C7DC6EC00DB08A6 /* News.storyboard in Resources */,
 				6D20BE241C7DC3D100DB08A6 /* Assets.xcassets in Resources */,
-				6D20BE221C7DC3D100DB08A6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D20BE1F1C7DC3D100DB08A6 /* ViewController.m in Sources */,
+				6D20BE511C7DC6DF00DB08A6 /* NewsTableViewController.m in Sources */,
 				6D20BE1C1C7DC3D100DB08A6 /* AppDelegate.m in Sources */,
 				6D20BE191C7DC3D100DB08A6 /* main.m in Sources */,
 			);
@@ -311,14 +335,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6D20BE201C7DC3D100DB08A6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6D20BE211C7DC3D100DB08A6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6D20BE251C7DC3D100DB08A6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
